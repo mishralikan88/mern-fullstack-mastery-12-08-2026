@@ -6,12 +6,14 @@ function App() {
   useEffect(() => {
     const checkBackend = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/health");
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/health`,
+        );
 
         const data = await response.json();
 
         setMessage(data.message);
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (error) {
         setMessage("Backend connection failed");
       }
