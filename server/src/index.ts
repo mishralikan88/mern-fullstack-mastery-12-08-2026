@@ -46,6 +46,30 @@ app.post("/api/employees", async (req, res) => {
   }
 });
 
+
+
+app.get("/api/employees", async (req, res) => {
+  try {
+    const employees = await Employee.find();
+
+    res.status(200).json({
+      success: true,
+      message: "Employees fetched successfully",
+      data: employees,
+    });
+  } catch (error) {
+    console.error("Get employees error:", error);
+
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch employees",
+    });
+  }
+});
+
+
+
+
 const startServer = async () => {
   await connectDatabase();
 
