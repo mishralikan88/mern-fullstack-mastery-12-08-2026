@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>WorkForge Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>WorkForge</h1>
+        <p>Project Management Platform</p>
+    </header>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Employees</a>
+        <a href="#">Projects</a>
+    </nav>
+
+
+    <aside>
+        <h2>Quick Links</h2>
+
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </aside>
+
+    <main>
+        <section>
+
+            <h2>Create Employee</h2>
+
+            <form action="/api/employees" method="post">
+
+                <fieldset>
+
+                    <legend>
+                        Employee Information
+                    </legend>
+
+                    <label for="employeeName">
+                        Employee Name
+                    </label>
+
+                    <input id="employeeName" type="text" name="employeeName">
+
+                    <br><br>
+
+                    <label for="employeeEmail">
+                        Email
+                    </label>
+
+                    <input id="employeeEmail" type="email" name="email">
+
+                    <br><br>
+
+                    <button type="submit">
+                        Create Employee
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 WorkForge</p>
+    </footer>
+
+</body>
+
+</html>

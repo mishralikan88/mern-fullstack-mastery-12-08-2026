@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>WorkForge Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>WorkForge</h1>
+        <p>Project Management Platform</p>
+    </header>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Employees</a>
+        <a href="#">Projects</a>
+    </nav>
+
+
+    <aside>
+        <h2>Quick Links</h2>
+
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </aside>
+
+    <main>
+
+        <section>
+
+            <h2>Create Employee</h2>
+
+            <form action="/api/employees" method="post">
+
+                <fieldset>
+
+                    <legend>Employee Information</legend>
+
+                    <label for="employeeName">
+                        Employee Name
+                    </label>
+
+                    <input id="employeeName" name="employeeName" type="text" placeholder="Enter employee name">
+
+                    <br><br>
+
+
+                    <label for="employeeEmail">
+                        Email
+                    </label>
+
+                    <input id="employeeEmail" name="email" type="email" placeholder="Enter email address">
+
+                    <br><br>
+
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input id="password" name="password" type="password">
+
+                    <br><br>
+
+
+                    <label for="experience">
+                        Experience
+                    </label>
+
+                    <input id="experience" name="experience" type="number">
+
+                    <br><br>
+
+
+                    <label for="phone">
+                        Phone
+                    </label>
+
+                    <input id="phone" name="phone" type="tel">
+
+                    <br><br>
+
+
+                    <label for="joiningDate">
+                        Joining Date
+                    </label>
+
+                    <input id="joiningDate" name="joiningDate" type="date">
+
+                    <br><br>
+
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <select id="department" name="department">
+                        <option value="engineering">
+                            Engineering
+                        </option>
+
+                        <option value="finance">
+                            Finance
+                        </option>
+
+                        <option value="hr">
+                            Human Resources
+                        </option>
+                    </select>
+
+                    <br><br>
+
+
+                    <p>Employment Type</p>
+
+                    <input id="fullTime" name="employmentType" type="radio" value="full-time">
+
+                    <label for="fullTime">
+                        Full Time
+                    </label>
+
+
+                    <input id="contract" name="employmentType" type="radio" value="contract">
+
+                    <label for="contract">
+                        Contract
+                    </label>
+
+                    <br><br>
+
+
+                    <input id="remote" name="remote" type="checkbox">
+
+                    <label for="remote">
+                        Remote Employee
+                    </label>
+
+                    <br><br>
+
+
+                    <label for="resume">
+                        Resume
+                    </label>
+
+                    <input id="resume" name="resume" type="file">
+
+                    <br><br>
+
+
+                    <label for="bio">
+                        Employee Bio
+                    </label>
+
+                    <br>
+
+                    <textarea id="bio" name="bio"></textarea>
+
+                    <br><br>
+
+
+                    <button type="submit">
+                        Create Employee
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 WorkForge</p>
+    </footer>
+
+</body>
+
+</html>
