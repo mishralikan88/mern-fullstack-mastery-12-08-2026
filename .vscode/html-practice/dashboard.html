@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Employee management dashboard">
+
+    <title>Employee Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Employee Management System</h1>
+
+        <nav aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="/dashboard" aria-current="page">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/employees">
+                        Employees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/reports">
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/profile">
+                        Profile
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Page -->
+    <main>
+
+        <!-- Dashboard Summary -->
+        <section aria-labelledby="summary-heading">
+
+            <h2 id="summary-heading">
+                Dashboard Summary
+            </h2>
+
+            <article>
+                <h3>Total Employees</h3>
+                <p>250</p>
+            </article>
+
+            <article>
+                <h3>Active Employees</h3>
+                <p>220</p>
+            </article>
+
+            <article>
+                <h3>Departments</h3>
+                <p>8</p>
+            </article>
+
+        </section>
+
+
+        <!-- Employee Table -->
+        <section aria-labelledby="employee-heading">
+
+            <h2 id="employee-heading">
+                Recent Employees
+            </h2>
+
+            <table>
+
+                <caption>
+                    Recently Added Employees
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>EMP-1001</td>
+                        <td>John Doe</td>
+                        <td>Engineering</td>
+                        <td>Developer</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>EMP-1002</td>
+                        <td>Sarah Smith</td>
+                        <td>HR</td>
+                        <td>HR Manager</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>EMP-1003</td>
+                        <td>David Johnson</td>
+                        <td>Finance</td>
+                        <td>Analyst</td>
+                        <td>Inactive</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section aria-labelledby="actions-heading">
+
+            <h2 id="actions-heading">
+                Quick Actions
+            </h2>
+
+            <ul>
+                <li>
+                    <a href="/employees/add">
+                        Add Employee
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/reports">
+                        View Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/settings">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- Notifications -->
+        <aside aria-labelledby="notifications-heading">
+
+            <h2 id="notifications-heading">
+                Notifications
+            </h2>
+
+            <ul>
+
+                <li>
+                    5 employee profiles require review.
+                </li>
+
+                <li>
+                    Payroll processing is scheduled for Friday.
+                </li>
+
+                <li>
+                    3 leave requests are pending approval.
+                </li>
+
+            </ul>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Employee Management System
+        </p>
+
+        <nav aria-label="Footer navigation">
+
+            <a href="/privacy">
+                Privacy Policy
+            </a>
+
+            <a href="/help">
+                Help
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>

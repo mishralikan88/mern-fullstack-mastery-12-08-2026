@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Form</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+
+            <h1>Employee Form</h1>
+
+            <form action="/employees" method="post">
+
+                <!-- Employee Name -->
+                <div>
+                    <label for="employeeName">
+                        Employee Name
+                    </label>
+
+                    <input type="text" id="employeeName" name="employeeName" autocomplete="name" minlength="3"
+                        maxlength="50" required>
+                </div>
+
+                <br>
+
+                <!-- Employee ID -->
+                <div>
+                    <label for="employeeId">
+                        Employee ID
+                    </label>
+
+                    <input type="text" id="employeeId" name="employeeId" placeholder="EMP-1001" pattern="EMP-[0-9]{4}"
+                        required>
+                </div>
+
+                <br>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <br>
+
+                <!-- Phone -->
+                <div>
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}"
+                        required>
+                </div>
+
+                <br>
+
+                <!-- Department -->
+                <div>
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <select id="department" name="department" required>
+                        <option value="">
+                            Select Department
+                        </option>
+
+                        <option value="engineering">
+                            Engineering
+                        </option>
+
+                        <option value="hr">
+                            Human Resources
+                        </option>
+
+                        <option value="finance">
+                            Finance
+                        </option>
+
+                        <option value="sales">
+                            Sales
+                        </option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Job Role -->
+                <div>
+                    <label for="role">
+                        Job Role
+                    </label>
+
+                    <input type="text" id="role" name="role" required>
+                </div>
+
+                <br>
+
+                <!-- Employment Type -->
+                <fieldset>
+
+                    <legend>
+                        Employment Type
+                    </legend>
+
+                    <input type="radio" id="fullTime" name="employmentType" value="full-time" required>
+
+                    <label for="fullTime">
+                        Full Time
+                    </label>
+
+                    <input type="radio" id="partTime" name="employmentType" value="part-time">
+
+                    <label for="partTime">
+                        Part Time
+                    </label>
+
+                    <input type="radio" id="contract" name="employmentType" value="contract">
+
+                    <label for="contract">
+                        Contract
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Joining Date -->
+                <div>
+                    <label for="joiningDate">
+                        Joining Date
+                    </label>
+
+                    <input type="date" id="joiningDate" name="joiningDate" required>
+                </div>
+
+                <br>
+
+                <!-- Salary -->
+                <div>
+                    <label for="salary">
+                        Salary
+                    </label>
+
+                    <input type="number" id="salary" name="salary" min="0" step="1000" required>
+                </div>
+
+                <br>
+
+                <!-- Skills -->
+                <fieldset>
+
+                    <legend>
+                        Skills
+                    </legend>
+
+                    <input type="checkbox" id="html" name="skills" value="html">
+
+                    <label for="html">
+                        HTML
+                    </label>
+
+                    <input type="checkbox" id="css" name="skills" value="css">
+
+                    <label for="css">
+                        CSS
+                    </label>
+
+                    <input type="checkbox" id="javascript" name="skills" value="javascript">
+
+                    <label for="javascript">
+                        JavaScript
+                    </label>
+
+                    <input type="checkbox" id="react" name="skills" value="react">
+
+                    <label for="react">
+                        React
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <!-- Address -->
+                <div>
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <br>
+
+                    <textarea id="address" name="address" rows="5" cols="40" minlength="10" maxlength="200"
+                        required></textarea>
+                </div>
+
+                <br>
+
+                <!-- Active Employee -->
+                <div>
+                    <input type="checkbox" id="active" name="active" value="yes">
+
+                    <label for="active">
+                        Active Employee
+                    </label>
+                </div>
+
+                <br>
+
+                <button type="submit">
+                    Save Employee
+                </button>
+
+                <button type="reset">
+                    Reset Form
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
