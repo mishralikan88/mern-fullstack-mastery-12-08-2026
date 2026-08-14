@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>WorkForge Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>WorkForge</h1>
+        <p>Project Management Platform</p>
+    </header>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Employees</a>
+        <a href="#">Projects</a>
+    </nav>
+
+
+    <aside>
+        <h2>Quick Links</h2>
+
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </aside>
+
+    <main>
+        <section>
+
+            <h2>Create Employee</h2>
+
+            <form>
+
+                <label for="name">Employee Name</label>
+                <input id="name" name="name" type="text" required minlength="2" maxlength="50" />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="18" max="65" />
+
+                <label for="salary">Salary</label>
+                <input id="salary" name="salary" type="number" min="0" step="1000" />
+
+                <label for="pin">PIN</label>
+                <input id="pin" name="pin" type="text" pattern="[0-9]{6}" />
+
+                <button type="submit">
+                    Add Employee
+                </button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 WorkForge</p>
+    </footer>
+
+</body>
+
+</html>
